@@ -60,7 +60,7 @@ color:var(--primary-hover);
 min-height:100vh;
 display:flex;
 align-items:center;
-background:#111;
+background:var(--dark-bg);
 padding:30px 20px;
 color: white;
 }
@@ -84,7 +84,7 @@ margin-bottom:10px;
 }
 
 .hero-text span{
-color:#ff6b00;
+color:var(--primary-color);
 }
 
 .hero-text h2{
@@ -242,14 +242,14 @@ gap:15px;
 .project-links a{
 text-decoration:none;
 color:white;
-background:#ff6b00;
+background:var(--primary-color);
 padding:8px 15px;
 border-radius:5px;
 font-size:14px;
 }
 
 .project-links a:hover{
-background:#e55d00;
+background:var(--primary-hover);
 }
 
 .project-image{
@@ -282,19 +282,19 @@ padding:30px;
 text-align:center;
 border-radius:10px;
 transition:0.3s;
-border: solid 1px #ff6b00;
+border: solid 1px var(--primary-color);
 }
 
 .skill-card:hover{
 transform:translateY(-8px);
 box-shadow:0 5px 20px rgba(0,0,0,0.1);
-background:#ff6b00;
+background:var(--primary-hover);
 color:white;
 }
 
 .skill-card i{
 font-size:40px;
-color:#ff6b00;
+color:var(--primary-color);
 margin-bottom:10px;
 }
 
@@ -327,7 +327,7 @@ overflow:hidden;
 
 .progress{
 height:100%;
-background:#ff6b00;
+background:var(--primary-color);
 width:0;
 border-radius:5px;
 transition:width 1.5s ease;
@@ -364,4 +364,103 @@ width:0;
 to{
 width:100%;
 }
+}
+
+.about{
+padding:100px 20px;
+background:var(--light-bg);
+}
+
+.about-container{
+max-width:1100px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:50px;
+}
+
+.about-image img{
+width:250px;
+border-radius:50%;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h2{
+margin-bottom:20px;
+}
+
+.about-text p{
+margin-bottom:20px;
+color:var(--text-color);
+}
+
+.about-skills{
+list-style:none;
+padding:0;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+}
+
+.about-skills li{
+background:white;
+padding:10px 15px;
+border-radius:6px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width:768px){
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-skills{
+grid-template-columns:1fr;
+}
+
+}
+
+.contact{
+padding:100px 20px;
+text-align:center;
+background:var(--light-bg);
+}
+
+.contact-subtitle{
+margin-top:10px;
+margin-bottom:40px;
+color:#555;
+}
+
+.contact-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+}
+
+.contact-item{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.contact-item i{
+font-size:30px;
+color:var(--primary-color);
+}
+
+.contact-item a{
+text-decoration:none;
+color:var(--text-color);
+}
+
+.contact-item a:hover{
+color:var(--primary-color);
 }
