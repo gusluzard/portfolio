@@ -253,34 +253,11 @@ margin-bottom:10px;
 color:white;
 }
 
-.skills-bars{
-max-width:600px;
-margin:50px auto 0;
-}
-
-.skill-bar{
-margin-bottom:20px;
-}
-
 .skill-bar p{
 margin-bottom:5px;
 font-weight:600;
 }
 
-.bar{
-width:100%;
-height:10px;
-background:#ddd;
-border-radius:5px;
-overflow:hidden;
-}
-
-.progress{
-height:100%;
-background:#ff6b00;
-width:0;
-animation:load 2s forwards;
-}
 
 .skills-bars{
 max-width:600px;
