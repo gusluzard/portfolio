@@ -11,6 +11,8 @@
 
 --card-bg:white;
 
+--gray-bg:#eee;
+
 }
 
 body{
@@ -180,7 +182,7 @@ font-size:36px;
 }
 
 .projects{
-padding:0px 20px;
+padding:80px 20px;
 background:#f5f5f5;
 }
 
@@ -260,7 +262,7 @@ overflow:hidden;
 
 .skills{
 padding:80px 20px;
-background:white;
+background:var(--gray-bg);
 }
 
 .skills h2{
@@ -367,7 +369,7 @@ width:100%;
 }
 
 .about{
-padding:100px 20px;
+padding:80px 20px;
 background:var(--light-bg);
 }
 
@@ -400,6 +402,51 @@ flex-direction:column;
 text-align:center;
 }
 
+}
+
+.services{
+padding:80px 20px;
+background:var(--gray-bg);
+text-align:center;
+}
+
+.services h2{
+margin-bottom:50px;
+}
+
+.services-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.service-card{
+background:var(--card-bg);
+padding:40px 30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.service-card i{
+font-size:40px;
+color:var(--primary-color);
+margin-bottom:20px;
+}
+
+.service-card h3{
+margin-bottom:15px;
+}
+
+.service-card p{
+color:#555;
 }
 
 .contact{
