@@ -216,7 +216,16 @@ box-shadow:0 15px 35px rgba(0,0,0,0.2);
 width:100%;
 height:200px;
 object-fit:cover;
+object-position:center;
 transition:transform 0.4s ease;
+}
+
+@media (max-width:768px){
+
+.project-card img{
+height:160px;
+}
+
 }
 
 .project-card:hover img{
@@ -245,9 +254,9 @@ gap:15px;
 text-decoration:none;
 color:white;
 background:var(--primary-color);
-padding:8px 15px;
+padding:8px 24px;
 border-radius:5px;
-font-size:14px;
+font-size:16px;
 }
 
 .project-links a:hover{
@@ -521,3 +530,23 @@ text-align:center;
 background:var(--dark-bg);
 color:white;
 }
+
+@media (max-width:768px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.navbar h2{
+font-size:20px;
+}
+
+.navbar ul{
+gap:15px;
+font-size:14px;
+flex-wrap:wrap;
+justify-content:flex-end;
+}
+
+}
+
