@@ -71,12 +71,19 @@ gap: 10px;
 }
 
 nav ul{
+display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 10px;
+text-align: center;
+}
+
+nav li{
+text-align: center;
 }
 
 }
+
 
 /*-----------------HERO-------------------*/
 
@@ -238,6 +245,21 @@ font-size: 14px;
 
 }
 
+@media (max-width: 768px){
+
+.buttons{
+flex-direction: row; /* 🔥 clave */
+justify-content: center;
+gap: 10px;
+}
+
+.buttons a{
+padding: 10px 16px;
+font-size: 14px;
+}
+
+}
+
 /*----------------PROJECTS-----------------*/
 
 .projects{
@@ -333,16 +355,18 @@ width: 90%;
 }
 
 .project-links{
-flex-direction: row;
+display: flex;
 justify-content: center;
-margin-left: 0;
 gap: 10px;
+flex-wrap: wrap;
 }
 
 .project-links a{
 width: auto;
-padding: 10px 16px;
-font-size: 14px;
+padding: 10px 14px;
+font-size: 13px;
+min-width: 110px;
+text-align: center;
 }
 
 .project-card img{
