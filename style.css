@@ -64,21 +64,22 @@ color:var(--primary-hover);
 
 @media (max-width: 768px){
 
-nav{
-flex-direction: column;
-align-items: center;
-gap: 10px;
-}
-
 nav ul{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+align-items: center;
 gap: 10px;
-text-align: center;
+padding: 0;
+margin: 0;
 }
 
 nav li{
+list-style: none;
+}
+
+nav a{
+display: inline-block;
 text-align: center;
 }
 
@@ -356,9 +357,9 @@ width: 90%;
 
 .project-links{
 display: flex;
-justify-content: center;
+flex-direction: column;
+align-items: center;
 gap: 10px;
-flex-wrap: wrap;
 }
 
 .project-links a{
