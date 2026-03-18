@@ -326,7 +326,6 @@ color: var(--text-color);
 display: flex;
 flex-direction: column;
 gap: 10px;
-margin-left: auto;
 }
 
 .project-links a{
